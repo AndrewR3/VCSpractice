@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoom Hover redone!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .zoom {
+      padding: 50px;
+      transition: transform 1s;
+      margin: 10px 1000px;
+    }
+
+    .zoom:hover {
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>I can Zoom!</h1>
+  <p>Put your mouse on the picture to make it zoom in!</p>
+
+  <div class="zoom"><img src="Actionpics/images/GIF.gif" width="300px" height="auto"></div>
+
+</body>
+
+</html>

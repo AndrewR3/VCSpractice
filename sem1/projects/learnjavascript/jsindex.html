@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learn JavaScript</title>
+  <link rel="stylesheet" href="css/learnjavascript.css">
+  <script src="js/myScript.js"></script>
+</head>
+
+<body align="center">
+  <h1 align="center">Welcome to my Learn JavaScript page! -- Created by Andy R.</h1>
+  <h2><a href="../../index.html">Return to Home Page</a></h2>
+  <br>
+  <hr>
+  <br>
+  <button type="button"
+onclick="document.getElementById('myTime').innerHTML = Date()">
+Click to display Date and Time.</button>
+  <button type="button"
+onclick="document.getElementById('myTime').innerHTML = ''">
+Click to hide Date and Time.</button>
+
+  <p id="myTime"></p>
+  <br>
+  <hr>
+  <br>
+  <p id="changeHTML">JavaScript can change HTML content.</p>
+
+  <button type="button" onclick='document.getElementById("changeHTML").innerHTML = "Hello JavaScript! Its Andy!"'>Click to change the HTML</button>
+  <button type="button" onclick='document.getElementById("changeHTML").innerHTML = "JavaScript can change HTML content."'>Click to restore this paragraph</button>
+  <br>
+  <hr>
+  <br>
+  <p>JavaScript can change HTML attribute values.</p>
+
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+  <button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light</button>
+
+  <img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+
+  <button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light</button>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <p id="extJavaScript">A paragraph</p>
+  <button type="button" onclick="myFunction()">Try it!</button>
+  <p>(myFunction is stored in an external file called "myScript.js")</p>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <table align="center">
+    <tr>
+      <td class="memeBox"><img class="meme" id="meme1" src="../Actionpics/images/20181028_112007.jpg" alt="Meme 1"></td>
+      <td class="memeBox"><img class="meme" id="meme2" src="../Actionpics/images/20181028_112007(1).jpg" alt="Meme 2"></td>
+      <td class="memeBox"><img class="meme" id="meme3" src="../Actionpics/images/20181028_112007(2).jpg" alt="Meme 3"></td>
+      <td class="memeBox"><img class="meme" id="meme4" src="../Actionpics/images/20181028_112008.jpg" alt="Meme 4"></td>
+      <td class="memeBox"><img class="meme" id="meme5" src="../Actionpics/images/20181028_112008(1).jpg" alt="Meme 5"></td>
+      <td class="memeBox"><img class="meme" id="meme6" src="../Actionpics/images/20181028_112008(2).jpg" alt="Meme 6"></td>
+    </tr>
+    <tr>
+      <td><button class="memeButton" onclick="document.getElementById('meme1').style.display='none'">Hide Image Above</button></td>
+      <td><button class="memeButton" onclick="document.getElementById('meme2').style.display='none'">Hide Image Above</button></td>
+      <td><button class="memeButton" onclick="document.getElementById('meme3').style.display='none'">Hide Image Above</button></td>
+      <td><button class="memeButton" onclick="document.getElementById('meme4').style.display='none'">Hide Image Above</button></td>
+      <td><button class="memeButton" onclick="document.getElementById('meme5').style.display='none'">Hide Image Above</button></td>
+      <td><button class="memeButton" onclick="document.getElementById('meme6').style.display='none'">Hide Image Above</button></td>
+    </tr>
+    <tr>
+      <td><button class="memeButton" type="button" onclick="document.getElementById('meme1').style.display='block'">Show Image Again</button></td>
+      <td><button class="memeButton" type="button" onclick="document.getElementById('meme2').style.display='block'">Show Image Again</button></td>
+      <td><button class="memeButton" type="button" onclick="document.getElementById('meme3').style.display='block'">Show Image Again</button></td>
+      <td><button class="memeButton" type="button" onclick="document.getElementById('meme4').style.display='block'">Show Image Again</button></td>
+      <td><button class="memeButton" type="button" onclick="document.getElementById('meme5').style.display='block'">Show Image Again</button></td>
+      <td><button class="memeButton" type="button" onclick="document.getElementById('meme6').style.display='block'">Show Image Again</button></td>
+    </tr>
+  </table>
+  <br>
+  <hr>
+  <br>
+
+  <canvas id="SuperNeatAndAwesomeCanvasThatIMadeAndGaveAVeryLongNameToMakeLifeHarderOnMyselfLolAndIShouldStopCuzImNeverGonnaGiveYouUpNeverGonnaLetYouGoLOLRickRolledAndAlsoImmaAddToThisEveryDayLikeToday4moreweeks" width="2000" height="1000"
+style="border:6px solid #0dff00; background-color: rgba(255, 255, 255, 0.5); border-radius: 100px">
+</canvas>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <canvas id="FrostyCanvas" width="2000" height="1000"
+style="border:6px solid #0dff00; background-image: linear-gradient(rgb(249, 249, 249), rgb(148, 226, 224)); border-radius: 100px">
+</canvas>
+  <script>
+    var canvas = document.getElementById("SuperNeatAndAwesomeCanvasThatIMadeAndGaveAVeryLongNameToMakeLifeHarderOnMyselfLolAndIShouldStopCuzImNeverGonnaGiveYouUpNeverGonnaLetYouGoLOLRickRolledAndAlsoImmaAddToThisEveryDayLikeToday4moreweeks");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "rgb(82, 27, 152)";
+    ctx.fillRect(200, 200, 200, 200);
+    ctx.fillStyle = "rgb(255, 130, 0)";
+    ctx.fillRect(1800, 10, 100, 100);
+    ctx.moveTo(0, 0);
+    ctx.lineTo(2000, 1000);
+    ctx.stroke();
+    ctx.moveTo(2000, 0);
+    ctx.lineTo(0, 1000);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(1000, 500, 400, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = "rgb(255, 245, 0)"
+    ctx.beginPath();
+    ctx.arc(95, 500, 40, 0, 1 * Math.PI);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(95, 500, 40, 1.7, 1.5 * Math.PI);
+    ctx.fill();
+    ctx.moveTo(95, 500);
+    ctx.lineTo(95, 460)
+    ctx.moveTo(95, 500);
+    ctx.lineTo(135, 500)
+    ctx.stroke();
+    ctx.fillStyle = "rgb(255, 0, 0)"
+    ctx.beginPath();
+    ctx.arc(130, 460, 10, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.stroke();
+    var canvas = document.getElementById("FrostyCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.lineWidth=10;
+    ctx.beginPath();
+    ctx.moveTo(880, 700);
+    ctx.lineTo(600, 900);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(1120, 700);
+    ctx.lineTo(1170, 500);
+    ctx.stroke();
+    ctx.fillStyle = "rgb(255, 255, 255)"
+    ctx.beginPath();
+    ctx.arc(1000, 900, 160, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.fillStyle = "rgb(255, 255, 255)"
+    ctx.beginPath();
+    ctx.arc(1000, 700, 130, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(1000, 550, 110, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = "rgb(215, 34, 34)"
+    ctx.beginPath();
+    ctx.arc(950, 500, 30, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(1050, 500, 30, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(1000, 550, 50, 0, 1 * Math.PI);
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.fillRect(900, 400, 200, 30);
+    ctx.stroke();
+    ctx.fillStyle = "rgb(0, 0, 0)"
+    ctx.fillRect(850, 430, 300, 20);
+    ctx.fillRect(900, 400, 200, -200);
+    ctx.beginPath();
+    ctx.arc(1000, 750, 10, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(1000, 780, 10, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(1000, 720, 10, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(1000, 690, 10, 0, 2 * Math.PI);
+    ctx.fill();
+
+
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/graphing4.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="../js/graphing4.js"></script>
+    <title>Blood Pressure Chart | Patient Chart</title>
+</head>
+<body onLoad="init()">
+    <h1>Dr. Andy Robinson's Blood Pressure Tracker</h1>
+    <h2>Patient: <input type="text"></h1>
+    <h2>Date of Birth: <input type="number" max="12" min="1"Placeholder="Month"><input type="number" max="31" min="1"Placeholder="Day"><input type="number" Placeholder="Year"></h1>
+        <canvas width="1900px" height="1070px" style="float: left" id="canvas"></canvas><br><h1 style="margin: 50px; color: rgb(110, 3, 3)">Systolic</h1><br><h1 style="margin: 50px; color: rgb(10, 3, 110)">Diastolic</h1><br><h1 style="margin: 50px; color: rgb(2, 78, 18)">Glucose</h1><br><h1 style="margin: 50px; color: rgb(255, 197, 6)">PulseOx</h1><br><h1 style="margin: 50px; color: rgb(115, 2, 243)">Wellness</h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <table width="90%" align="center">
+            <tr>
+                <th colspan="6"><button type="button" onclick="regraph()"><h1>Input Data</h1></button></th>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <th>Systolic</th>
+                <th>Diastolic</th>
+                <th>Glucose</th>
+                <th>Pulse Ox</th>
+                <th>Wellness</th>
+            </tr>
+           <tr>
+            <td><p>1</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s1"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d1"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g1"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p1"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w1"></td>
+           </tr>
+           <tr>
+            <td><p>2</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s2"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d2"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g2"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p2"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w2"></td>
+           </tr><tr>
+            <td><p>3</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s3"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d3"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g3"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p3"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w3"></td>
+           </tr><tr>
+            <td><p>4</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s4"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d4"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g4"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p4"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w4"></td>
+           </tr><tr>
+            <td><p>5</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s5"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d5"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g5"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p5"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w5"></td>
+           </tr><tr>
+            <td><p>6</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s6"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d6"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g6"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p6"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w6"></td>
+           </tr><tr>
+            <td><p>7</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s7"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d7"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g7"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p7"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w7"></td>
+           </tr><tr>
+            <td><p>8</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s8"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d8"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g8"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p8"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w8"></td>
+           </tr><tr>
+            <td><p>9</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s9"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d9"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g9"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p9"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w9"></td>
+           </tr><tr>
+            <td><p>10</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s10"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d10"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g10"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p10"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w10"></td>
+           </tr><tr>
+            <td><p>11</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s11"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d11"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g11"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p11"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w11"></td>
+           </tr><tr>
+            <td><p>12</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s12"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d12"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g12"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p12"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w12"></td>
+           </tr><tr>
+            <td><p>13</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s13"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d13"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g13"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p13"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w13"></td>
+           </tr><tr>
+            <td><p>14</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s14"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d14"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g14"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p14"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w14"></td>
+           </tr><tr>
+            <td><p>15</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s15"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d15"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g15"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p15"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w15"></td>
+           </tr><tr>
+            <td><p>16</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s16"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d16"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g16"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p16"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w16"></td>
+           </tr><tr>
+            <td><p>17</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s17"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d17"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g17"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p17"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w17"></td>
+           </tr><tr>
+            <td><p>18</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s18"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d18"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g18"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p18"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w18"></td>
+           </tr><tr>
+            <td><p>19</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s19"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d19"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g19"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p19"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w19"></td>
+           </tr><tr>
+            <td><p>20</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s20"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d20"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g20"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p20"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w20"></td>
+           </tr><tr>
+            <td><p>21</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s21"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d21"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g21"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p21"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w21"></td>
+           </tr><tr>
+            <td><p>22</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s22"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d22"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g22"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p22"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w22"></td>
+           </tr><tr>
+            <td><p>23</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s23"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d23"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g23"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p23"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w23"></td>
+           </tr><tr>
+            <td><p>24</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s24"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d24"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g24"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p24"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w24"></td>
+           </tr><tr>
+            <td><p>25</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s25"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d25"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g25"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p25"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w25"></td>
+           </tr><tr>
+            <td><p>26</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s26"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d26"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g26"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p26"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w26"></td>
+           </tr><tr>
+            <td><p>27</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s27"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d27"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g27"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p27"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w27"></td>
+           </tr><tr>
+            <td><p>28</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s28"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d28"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g28"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p28"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w28"></td>
+           </tr><tr>
+            <td><p>29</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s29"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d29"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g29"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p29"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w29"></td>
+           </tr><tr>
+            <td><p>30</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s30"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d30"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g30"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p30"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w30"></td>
+           </tr>
+           <tr>
+            <td><p>31</p></td>
+            <td><input type="number" max="220" min="0" class="systolic" id="s31"></td>
+            <td><input type="number" max="220" min="0" class="diastolic" id="d31"></td>
+            <td><input type="number" max="220" min="0" class="glucose" id="g31"></td>
+            <td><input type="number" max="220" min="0" class="pulseOx" id="p31"></td>
+            <td><input type="number" max="220" min="0" class="wellness" id="w31"></td>
+           </tr>
+           
+        </table>
+</body>
+</html>

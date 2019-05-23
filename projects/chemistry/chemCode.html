@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chemical Formula Creator</title>
+    <link rel="stylesheet" href="formula.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script type="text/javascript" src="formula.js"></script>
+    
+  </script>
+</head>
+<body>
+  <h1>Chemical Formula Creator</h1>
+  <div class="read">
+    <button class="vanish" onclick="vanish()">X</button>
+    <h2>Please Read</h2> 
+  <p>When inputting chemicals you want to form a compound out of, here are some rules to follow, or the site won't work.</p>
+  <ul>
+    <li>Type the chemical symbol, the way it appears on the periodic table of elements</li>
+    <li>This site is programmed to return "This chemical does not exist, or is not constant" for chemicals that have changing amounts of valence electrons (i.e. Cu can be Cu (I) or Cu (II), but the site will not display either</li>
+    <li>This site can only do compounds with 2 chemicals</li>
+  </ul>
+</div>
+  <div style="margin-bottom: 50px;">
+    <input type="text" maxlength="2" id="chem1" placeholder="Input Chemical 1 Here" class="input1"></select>
+    <input type="text" maxlength="2" id="chem2" placeholder="Input Chemical 2 Here" class="input2"></select>
+    <button onclick="chemicalform()">Balance Formula!</button>
+  </div>
+  <div>
+    <h1>The newly formed compound symbol is:</h1>
+    
+    <table>
+      <tr>
+        <td rowspan="2" class="base" id="one">
+
+        </td>
+        <td class="exp" id="two">
+
+        </td>
+        <td rowspan="2" class="base" id="three">
+
+        </td>
+        <td class="exp" id="four">
+
+        </td>
+      </tr>
+      <tr></tr>
+    </table>
+    <div id="silent" class="silent" style="float: left"></div>
+   <div id="silent2" class="silent" style="float: right"></div>
+  </div>
+</body>
+
+</html>

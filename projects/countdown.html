@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+<style>
+body, html {
+  height: 100%;
+  font-family: 'Baloo Bhai', cursive;
+  text-align: center;
+  background-image: linear-gradient(rgb(0, 255, 42),rgb(0, 89, 255), rgb(0,89,255), rgb(0,255,42));
+}
+hr{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+div{
+    height: 180px;
+    background-image:linear-gradient(rgb(0, 124, 17),rgb(7, 56, 0));
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/onecoolboi.jpg');
+
+  /* Full height */
+  height: 50%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url('../images/doggo.jpg');
+
+  /* Full height */
+  height: 70%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.demo{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 70px;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+  .parallax2 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+    <h1>Andy Robinson Countdown Timer May 2019</h1>
+    <hr>
+    <div class="parallax"></div>
+    <div>
+    <h1>Time Until Summer</h1>
+
+<h1 id="demo"></h1>
+    </div>
+<div class="parallax2"></div>
+<div><h1>I'm so excited!</h1></div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("June 21, 2019 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+
+  document.getElementById("demo").innerHTML = days + " days, " + hours + " hours, "
+  + minutes + " minutes, " + seconds + " seconds ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "IT HAS HAPPENED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Action Pics by Andy Robinson</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/actionpics.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rosario" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="tabless">Welcome to my Action Picture Page! Created by Andy Robinson. <a href="../../index.html">Return to Home Page</a></h1>
+  <hr>
+  <br>
+  <table align="center" border="1">
+    <tr>
+      <th colspan="2"><h1 class="thfont">Action Pictures I made!</h1>
+    </tr>
+    <tr>
+      <th><h1>My Action Picture</h1>
+      </th>
+      <th><h1>How I made my Action Picture</h1>
+      </th>
+    </tr>
+    <tr>
+      <td style="width: 15%">
+        <img class="responsive" src="images/A1SecondWebActionPic.png" alt="A1 2nd Action Pic">
+      </td>
+      <td>
+        <hr>
+        <p><img src="images/how1.png" align="right" width="1000" height="auto"> To make this action picture, I waited until my dog (Oreo) was running toward me, and then I started taking a few pictures. I selected some of the best ones to doctor in GIMP to show every frame of Oreo in one pic. I layered the pictures as transparent and used the healing tool on the different layers to show as many Oreos as I could.  </p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <hr>
+
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%">
+        <img class="responsive" src="images/GIF.gif" alt="My radical GIF">
+      </td>
+      <td>
+        <hr>
+        <p><img src="images/how2.png" align="right" width="1000" height="auto"> To make this gif, I opened all of the frames in GIMP as layers, and went to effect > animation > optimize for gif. Then I saved it as a gif format, and now it works</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <hr>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <hr>
+  <br>
+  <table align="center" border="1">
+    <tr>
+
+      <th><h2 class="thfont">My Slideshow</h2>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <div class="w3-content w3-display-container">
+          <img class="mySlides" src="images/20181028_112007.jpg" style="width: auto; height: 450px; align: center; margin: 220px 50px">
+          <img class="mySlides" src="images/20181028_112007(1).jpg" style="width:auto; height: 450px; align:center; margin: 220px 50px">
+          <img class="mySlides" src="images/20181028_112007(2).jpg" style="width:auto; height: 450px; align:center; margin: 220px 50px">
+          <img class="mySlides" src="images/20181028_112008.jpg" style="width:auto; height: 450px; align:center; margin: 220px 50px">
+          <img class="mySlides" src="images/20181028_112008(1).jpg" style="width:auto; height: 450px; align:center; margin: 220px 50px">
+          <img class="mySlides" src="images/20181028_112008(2).jpg" style="width:auto; height: 450px; align:center; margin: 220px 50px">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><h2>Getting these pictures was really simple. All I had to do was go outside, call my doggo (Oreo), and start spamming my take picture button</h2>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <hr>
+  <br>
+  <table align="center" border="1">
+    <tr>
+      <th colspan="2"><h2 class="thfont">SPICIEST MEME YOU WILL EVER SEE (Not clickbait)</h2>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <video style="margin: 20px 850px" width="600" height="240" controls>
+  <source src="video/spicymeme.mp4" type="video/mp4">
+
+  Your browser does not support the video tag.
+</td>
+</tr>
+</table>
+</video>
+
+        <!--This JavaScript must be at the bottom because the HTML and CSS must load in for the JavaScript to work
+  -->
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+              slideIndex = 1
+            }
+            if (n < 1) {
+              slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+          }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bargraph.css">
+    <script type="text/javascript" src="../js/bargraph.js"></script>
+    <title>Bar Graph</title>
+</head>
+<body align="center" onLoad="init()">
+    <h1>Andy Robinson's Bar Graph March 2019</h1>
+    <canvas id="canvas" height="760" width="1500" class="canvas"></canvas>
+    <table style="width: 500px; height: 770px; float: right;">
+        <tr>
+            <th>Choose Country!</th>
+            <th>Choose GDP!</th>
+        </tr>
+    <tr>
+        <td>
+            <select id="country">
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="Germany">Germany</option>
+                <option value="Russia">Russia</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Britain">Britain</option>
+                <option value="France">France</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Italy">Italy</option>
+                <option value="Turkey">Turkey</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Spain">Spain</option>
+                
+
+        </select>
+    </td>
+        <td> <input type="value" id="newValue"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><button onclick="change()">Change!</button></td>
+        
+    </tr>
+    </table>
+   
+
+</body>
+</html>

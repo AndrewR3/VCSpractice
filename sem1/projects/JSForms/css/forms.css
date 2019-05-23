@@ -1,0 +1,21 @@
+body {
+  background-image: url("../../Actionpics/images/tetxre.jpg")
+}
+
+h1 {
+  color: rgb(48, 99, 12);
+}
+form{
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.41);
+  border-radius: 10px;
+  margin: 10px 30%;
+}
+.myForm{
+color: rgb(11, 93, 12);
+}
+hr{
+  width: 95%;
+  border-width: 2px;
+  border-color: rgb(7, 98, 19);
+}

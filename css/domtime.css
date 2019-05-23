@@ -1,0 +1,20 @@
+body {
+    background-image: linear-gradient(rgb(33, 116, 0),rgb(0, 58, 13), rgb(0, 0, 0), rgb(0, 58, 13), rgb(33, 116, 0));
+}
+p, h1, h2, h3, h4, h5, h6, table, th, td, div {
+    font-family:'Oswald', sans-serif;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+.container {
+    background-color: rgb(190, 253, 174);
+    width: 440px;
+    height: 100px;
+    border: 5px solid rgb(167, 0, 0);
+    border-radius: 10px;
+    font-size: xx-large;
+    font-weight: bold;
+
+}

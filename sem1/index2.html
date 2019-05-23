@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <script src="colors/js/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="colors/js/colors.js"></script>
+
+
+
+
+  <title>Home Page</title>
+
+<style>
+
+p {
+  color: #06f202;
+}
+
+a {
+  color: #ffa602;
+}
+
+
+.item1 { grid-area: header; background-color: rgba(69, 3, 99, 0.7); }
+.item2 { grid-area: menu; background-color: rgba(69, 3, 99, 0.7); }
+.item3 { grid-area: main; background-color: rgba(69, 3, 99, 0.7); }
+.item4 { grid-area: right; background-color: rgba(69, 3, 99, 0.7); }
+.item5 { grid-area: footer; background-color: rgba(69, 3, 99, 0.7); }
+
+
+.grid-container {
+
+background-image: url("images/grass.jpeg");
+  display: grid;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu main main main main main'
+    'menu right right right right right'
+    'menu footer footer footer footer footer'
+  grid-gap: 10px;
+
+  padding: 10px;
+
+}
+
+.grid-container > div {
+
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+
+}
+body {
+background-color: GREY;
+
+}
+a{
+  font-family: 'Share Tech Mono', monospace;
+  color: rgb(5, 69, 172);
+}
+.titleh1 {
+
+font-family: 'Share Tech Mono', monospace;
+color: #06f202;
+}
+.titleh6 {
+
+font-family: 'Oxygen Mono', monospace;
+color: #06f202;
+
+}
+.textChange{
+font-family: 'K2D', sans-serif;
+color: rgb(250, 2, 2);
+font-size: xx-large;
+
+}
+.a {color:"#f17901";
+rojects
+
+    }
+
+.theTitle { grid-area: header; }
+.main { grid-area: menu; }
+.allLogos { grid-area: main; }
+.right { grid-area: logo; }
+.footer { grid-area: footer; }rojects
+
+.grid-container {
+
+  border: 6px solid #;
+  border-radius: 10px;
+  box-shadow: 5px 5px 40px GREEN;
+  margin: 50px;
+  display: grid;
+  /*
+  grid-template-areas:
+  'menu . header header header header'
+  'menu . main main main main'
+  'menu . right right right right'
+  'menu . footer footer footer footer';
+  */
+
+grid-template-columns: 2fr 6fr;
+  grid-template-rows: auto 400px 400px 400px;
+
+  grid-template-areas:
+  'menu . header header header header'
+  'menu . main main main main'
+  'menu . right right right right'
+  'menu . footer footer footer footer';;
+
+  grid-gap: 10px;
+
+  padding: 10px;
+}
+@media screen and (max-width: 40em) {
+.grid-container {
+  background-image: url("images/city2.jpg");
+  grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "right"
+    "footer"
+    "menu";
+
+
+
+
+
+}
+body{
+  background-color: #03204f;
+}
+
+}
+.grid-container > div {
+
+  border: 6px solid #660066;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 255, 0.5);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+<h1 class="titleh1">This is my old Main Page. To reach my new one, go <a href="../index.html">here</a>.</h1>
+<div class="grid-container">
+  <div class="item1"><h1 id="myName" class="titleh1">Home Page Created By Andy Robinson!</h1>
+    <div id="aboutMe">
+      <img src="images/me.jpg"  style=" float: left; width: 300px; height: 300px; padding: 30px">
+    <h3 style="color: rgb(5, 69, 172)">I am a sophomore at MVHS</h3>
+  <ul style="color: rgb(5, 69, 172); text-align: left;">
+    <li>I love games such as Super Mario and The Legend of Zelda</li>
+    <li>My favorite class is Exploring Computer Science</li>
+    <li>I received mostly recessive genes</li>
+    <li>I'm one of those weird few who enjoys math, and is good at it</li>
+    <li>I am in every honors class I can take, except Biology, because I prefer chemistry</li>
+    <li>I want to become a video game designer and programmer when I finish college, or a web designer, or director of photography</li>
+    <li>My favorite video game is Super Mario Odyssey</li>
+    <li>My hobbies aside from video games are coding, videography, and graphic design</li>
+
+  </ul>
+  <hr>
+  </div>
+   </div>
+  <div class="item2"><h6 class="titleh6"><img src="images/bsu.png"> <img src="images/chs.png"><img src="images/mvhs.png"><img src="images/wasd.png"></h6></div>
+  <div class="item3"><h6 class="titleh6" id="changeText">My Projects</h6>
+    <p> <a href="projects/jscalc/calc.html">JavaScript Calculator</a></p>
+    <hr>
+    <p><a href="projects/JSForms/JSForms.html">Java Forms</a></p>
+    <hr>
+    <p><a href="projects/myGame/w3final/w3final.html">Final HTML Game</a></p>
+    <hr>
+    <p><a href="projects/myGame/GameIndex.html">My Game: A canvas and JavaScript project!</p>
+    <hr>
+    <p><a href="projects/myClock/myClock.html">My Clock:</a> Another canvas and JavaScript Project!</p>
+    <hr>
+    <p> My <a href="projects/learnjavascript/jsindex.html">Learn JavaScript</a> Project!</p>
+    <p>My JavaScript partner was <a href="westada.tech/a1/bodenr/projects/learnjavascript/index.html">Boden</a></p>
+    <hr>
+    <p> <a href="projects/Actionpics/action.html">My Action Picture Project!</a></p>
+    <p>Thanks to <a href="www.westada.tech/a1/bodenr/projects/actionpics">Boden</a> for helping with this one too!</p>
+    <hr>
+<a href="projects/mousedown.html"><p>P2: JQ Mousedown Tic Tac Toe Project.</p></a>
+
+  <a href="www.westada.tech/a1/bodenr/projects/mousedown"><p> My partner in all things mousey was Boden R.</p></a>
+  <hr>
+
+
+    <p> <a href="P1.html">P1: How I created a virtual machine, installed SW, and backed it up offsite</a>.</p> <p>I am inspired by the great work done by <a href="westada.tech/a1/bodenr/projects/p1.html">Boden</a></p>
+    <hr>
+
+
+
+  </div>
+  <div class="item4"><h6 class="titleh6"><a href="projects/JSForms/pages/chemquiz.html">Chemistry Quiz!</a></h6></div>
+  <div class="item5"><h6 class="titleh6">Thanks to <a href="www.westada.tech/a1/bodenr">Boden</a> for helping me with some of my code.</h6></div>
+</div>
+</body>
+</html>

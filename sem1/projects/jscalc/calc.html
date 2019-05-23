@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/calc.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <title>Calculator!</title>
+</head>
+
+<body align="center">
+  <h1>JavaScript Calculator | Andy Robinson | January 9th 2019 | Period 1A</h1>
+  <form align="center" style="border-width: 10px; border-color: rgb(0, 0, 0);">
+    Value 1: <input type="text" id="value1">
+    Value 2: <input type="text" id="value2">
+    Operator: <select id="operator">
+      <option value="add">+</option>
+      <option value="sub">-</option>
+      <option value="mult">x</option>
+      <option value="div">/</option>
+    </select>
+    <button type="button" onclick="calc()">Calculate</button>
+  </form>
+  <div class="result">Your answer is<p id="result">---</p> <br></div>
+</body>
+<script src="js/calc.js"></script>
+
+</html>

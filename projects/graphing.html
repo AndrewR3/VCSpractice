@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <style>
+        html {
+            font-family: Verdana;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/graphing.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="../js/graphing2.js">
+       
+    </script>
+</head>
+
+<body onLoad="init()">
+    <h1>Andy Robinson February 2019</h1>
+    <div align="center">
+        <h2>How much I play each game per week</h2>
+        
+
+        <select name="company" id="company" style="float: right; margin: 10px 700px 10px 10px">
+            <option value="Albertsons">Minecraft</option>
+            <option value="Idacorp">Super Smash Bros Ultimate</option>
+            <option value="Micron">Something Else</option>
+        </select>
+        <select name="company" id="month" style="float: left; margin: 10px 10px 10px 700px;">
+            <option value="January">Sunday</option>
+            <option value="February">Monday</option>
+            <option value="March">Tuesday</option>
+            <option value="April">Wednesday my dudes</option>
+            <option value="May">Thursday</option>
+            <option value="June">Friday</option>
+            <option value="July">Saturday</option>
+            
+        </select>
+        <input type="text" placeholder="Time (Minutes)" style="margin: 10px;" id="profit"></input>
+        <br>
+        <button type="button" onclick="reGraph()">Update Graph</button>
+        <br>
+        <canvas id="canvas" height="800" width="1300" style="background-image: url('../images/texture.jpg')">
+        </canvas>
+        <br>
+        <!--Legends for Dataplot -->
+        <span style="color:rgb(208, 218, 125); font-family: 'Oswald', sans-serif; ">Minecraft</span>
+        <span style="color:rgb(255, 255, 255); font-family: 'Oswald', sans-serif;">Super Smash Bros Ultimate</span>
+        <span style="color:rgb(0, 252, 13); font-family: 'Oswald', sans-serif;">Something Else</span>
+    </div>
+</body>
+
+</html>

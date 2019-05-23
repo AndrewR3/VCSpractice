@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/payment.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <title>Monthly Payment Calculator | Bank of Andy; A Bank you Trust | January 2019</title>
+</head>
+<body align="center">
+    <h1>Monthly Payment Calculator | Bank of Andy; A Bank you Trust | January 2019</h1>
+    <img src="../images/paymentform.png" style="float: left; margin: 10px 300px; width: 450px; height: 300px;">
+    <p style=" margin: 10px 400px 10px 10px; font-size: 30px;">M = Monthly Payment</p>
+    <p style=" margin: 10px 400px 10px 10px; font-size: 30px;">P = Principal</p>
+    <p style=" margin: 10px 400px 10px 10px; font-size: 30px;">r = APR (annual percentage rate)</p>
+    <p style=" margin: 10px 400px 10px 10px; font-size: 30px;">t = number of years</p>
+    <form>
+    <table align="center">
+        <tr>
+            <td><input type="text"  id="price"></td>
+            <td><p>Enter the Sales Price</p></td>
+        </tr>
+        <tr>
+                <td><input type="text" id="tax"></td>
+                <td><p>Enter the sales tax for your area of residence</p></td>            
+        </tr>
+        <tr>
+                <td><button type="button" style="width: 200px; height: 30px;" onclick="theTax()">Price after tax</button></td>
+                <td><p>Click to show post-tax price</p></td>            
+        </tr>
+        <tr>
+                <td><div id="afterTax"><p>Your taxed price will appear here</p></div></td>
+                <td><p>This is the price after tax</p></td>
+        </tr>
+        
+        <tr>
+                <td><input type="text" id="downPayment"></td>
+                <td><p>Enter the Down Payment</p></td>
+        </tr>
+        <tr>
+                <td><button type="button" style="width: 200px; height: 30px;" onclick="principal()">Calculate Principal</button></td>
+                <td><p>Click to Calculate Principal (Cost - Down Payment)</p></td>
+        </tr>
+        <tr>
+                <td><div id="resultPrincipal"><p>Your Principal will appear here</p></div></td>
+                <td><p>This is the calculated Principal</p></td>
+        </tr>
+        <tr>
+                <td><input type="text" id="apr"></td>
+                <td><p>Enter the APR</p></td>
+        </tr>
+        <tr>
+                <td><input type="text" id="numberPayments"></td>
+                <td><p>Enter the number of months for repayment</p></td>
+        </tr>
+        <tr>
+                <td><button type="button" style="width: 200px; height: 30px;" onclick="calcPayment()">Calculate Monthly Payment</button></td>
+                <td><p>Click to calculate the monthly payment</p></td>
+        </tr>
+        <tr>
+                <td><div id="monthlyPay"><p>Your Monthly Payment will appear here</p></div></td>
+                <td><p>This is your monthly payment</p></td>
+        </tr>
+        
+        
+    </table>
+    
+    </form>
+    <div id="resultPrinciple"></div>
+</body>
+<script src="../js/payment.js"></script>
+</html>

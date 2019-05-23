@@ -1,0 +1,29 @@
+body{
+  background-image: url("../../jscalc/images/texture.jpg")
+}
+table {
+  border-color: rgb(15, 12, 0);
+  border-width: medium;
+  border-radius: 10px;
+  background-color: rgba(237, 24, 2, 0.72);
+  width: 95%;
+}
+td{
+  border-color: rgb(15, 12, 0);
+  border-width: medium;
+  border-radius: 10px;
+  background-color: rgba(71, 16, 110, 0.79);
+  width: 70%;
+  margin: 3%;
+}
+.imagebox {
+  width: 20%;
+}
+h1{
+  font-size: 120px;
+  color: rgb(255, 255, 255);
+}
+p{
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}

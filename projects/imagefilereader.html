@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Reader</title>
+    <style>
+    html{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 100%;
+        background: #333;
+    }
+    #page-wrapper{
+        width: 1600px;
+        background: #FFF;
+        padding: 1em;
+        margin: 1em auto;
+        min-height: 600px;
+        border-top: 5px solid #69c773;
+        box-shadow: 8px 8px 10px rgb(95, 0, 0);
+    }
+    h1{
+        margin-top: 0;
+        
+    }
+    img{
+        max-width: 100%;
+    }
+    #fileDisplayArea{
+        margin-top: 2em;
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="page-wrapper">
+    
+    <h1>Choose a Picture | Andy Robinson | 1 May 2019</h1>
+
+    <div>
+        Select an Image File:
+        <input type="file" id="fileInput">
+    </div>
+    <div id="fileDisplayArea"></div>
+    </div>
+    <script>
+    window.onload = function () {
+        //Begin File Reader Text
+        var fileInput = document.getElementById('fileInput');
+        var fileDisplayArea = document.getElementById('fileDisplayArea');
+
+
+        fileInput,addEventListener('change', function (e){
+            var file = fileInput.files[0];
+            var imageType = /image.*/;
+
+
+            if (file.type.match(imageType)){
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    fileDisplayArea.innerHTML = "";
+
+                    var img = new Image();
+                    img.src = reader.result;
+
+                    fileDisplayArea.appendChild(img);
+                }
+                reader.readAsDataURL(file);
+            } else{
+                fileDisplayArea.innerHTML = "File not supported. Please choose an image file (jpg, png, gif etc...)"
+            }
+        });
+        //End of File Reader Text
+    }
+    </script>
+</body>
+</html>

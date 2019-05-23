@@ -1,0 +1,60 @@
+body {
+  background-image: url("../images/texture.jpg");
+}
+h1{
+  color: rgb(255, 255, 255);
+  font-family: 'Titillium Web', sans-serif;
+}
+p{
+  color: rgb(255, 255, 255);
+  font-family: 'Titillium Web', sans-serif;
+}
+h2{
+  color: rgb(255, 255, 255);
+  font-family: 'Titillium Web', sans-serif;
+}
+h3{
+  color: rgb(255, 255, 255);
+  font-family: 'Titillium Web', sans-serif;
+}
+h4{
+  color: rgb(255, 255, 255);
+  font-family: 'Titillium Web', sans-serif;
+}
+form{
+background-color: rgba(131, 175, 228, 0.56);
+border-radius: 5px;
+width: 50%;
+height: auto;
+border-width: 10px;
+border-color: rgba(61, 170, 170, 0.56);
+font-size: 30px;
+margin: auto 25%;
+font-family: 'Titillium Web', sans-serif;
+}
+input{
+  height: 30px;
+  margin: 10px;
+  font-family: 'Titillium Web', sans-serif;
+}
+select{
+  height: 30px;
+  margin: 10px;
+  font-family: 'Titillium Web', sans-serif;
+}
+button {
+  height: 30px;
+  margin: 10px;
+  font-family: 'Titillium Web', sans-serif;
+}
+div {
+  font-family: 'Titillium Web', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 120px;
+  background-color: rgba(35, 6, 61, 0.56);
+  width: 50%;
+  margin: 10px 25%;
+  border-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border-width: 20px;
+}

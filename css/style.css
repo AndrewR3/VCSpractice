@@ -1,0 +1,74 @@
+body{
+    background-image: url("../images/texture2.jpg");
+    
+}
+table{
+   
+    width: 80%;
+    height: auto;
+    background-image: url("../images/texture.jpg");
+    border-spacing: 20px;
+    border: 5px solid white;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Oswald', sans-serif;
+}
+h2{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Oswald', sans-serif;
+}
+td{
+    border-color: #ffffff;
+    width: 20%;
+    height: 90%;
+    background-color: rgba(107, 16, 28, 0.534);
+    margin: 15px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-spacing: 20px;
+}
+.project {
+    width: 70%;
+}
+h3{
+    color: #ffffff;
+    margin: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    font-family: 'Oswald', sans-serif;
+    
+}
+.tableLink{
+    font-family: 'Oswald', sans-serif;
+    
+}
+p{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Oswald', sans-serif; 
+}
+.space{
+    width: 10%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
+.vertSpace{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    
+}
+div{
+    width: 80%;
+    height: 300px;
+    background-image: url("../images/texture.jpg");
+    border: 3px solid white;
+    margin: 10px 10% 10px 10%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 120px;
+}

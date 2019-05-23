@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+<style>
+body, html {
+  height: 100%;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../sem1/images/me.jpg');
+
+  /* Full height */
+  height: 50%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Andy Robinson May 2019. Scroll down to read a story!</h1>
+
+<div class="parallax"></div>
+
+<div style="height:400px;background-color:rgb(131, 131, 131);font-size:36px">
+There once was a very odd kid, who really enjoyed his trains
+</div>
+
+<div class="parallax"></div>
+
+<div style="height:400px;background-color:rgb(131, 131, 131);font-size:36px">
+ But then he came upon the magic of video games! He could be a train, a plane, a mushroom munchin' high jumper, anything he wanted!
+    </div>
+    <div class="parallax"></div>
+
+<div style="height:400px;background-color:rgb(131, 131, 131);font-size:36px">
+ And then he learned to create these worlds himself, using languages such as python and C++.
+    </div>
+</body>
+</html>

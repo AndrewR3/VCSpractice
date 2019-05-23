@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(108, 13, 13);
+}
+
+table{
+width: 80%;
+height: 1000px;
+margin: auto;
+background-color: rgba(5, 14, 89, 0.71);
+border: 3px solid #FFFFFF;
+border-spacing: 20px;
+
+
+}
+tr{
+border: 3px solid #000000;
+background-color: rgb(166, 166, 166);
+
+
+}
+td{
+border: 3px solid #000000;
+background-color: rgb(166, 166, 166);
+padding: 100px;
+
+
+}
+
+.greenCell{
+  background-color: #00FF00;
+
+
+
+}
+.redCell{
+background-color: #FF0000;
+
+
+
+
+}

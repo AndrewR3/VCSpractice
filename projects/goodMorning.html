@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="../css/goodMorning.css">
+    <title>Good Morning / Buenos Dias / Andy Robinson</title>
+</head>
+<body>
+    <h1>Good Morning / Dom Project 2 / Andy Robinson</h1>
+<div id="classPeriod"></div>
+</body>
+<script>
+    let getBody = document.body;
+
+    let newElement = document.createElement("h1");
+
+    let date = new Date();
+    let currentHour = date.getHours();
+    console.log("The current date and hour are: " + date);
+
+
+    let createTxtMsg;
+
+
+    if(currentHour >= 4 && currentHour < 10) {
+        createTxtMsg = "Good Morning! / ¡Buenos Dias!";
+    } else if (currentHour >= 10 && currentHour < 12) {
+        createTxtMsg = "Good Day! / ¡Buenos Dias!";
+    } else if (currentHour >= 12 && currentHour < 18) {
+        createTxtMsg = "Good Afternoon! / ¡Buenas Tardes!";
+    } else if (currentHour >= 18 && currentHour < 20) {
+        createTxtMsg = "Good Evening! / ¡Buenas Tardes!";
+    } else if (currentHour >= 20 && currentHour < 4) {
+        createTxtMsg = "Good Night! / ¡Buenas Noches!";
+    } else {
+        createTxtMsg = "Are you from a different planet?";
+    }
+    console.log(createTxtMsg);
+
+    let createEleTxt = document.createTextNode(createTxtMsg);
+
+    newElement.appendChild(createEleTxt);
+
+    getBody.appendChild(newElement);
+
+    newElement.setAttribute("class", "welcome");
+
+    newElement.style.cssText = "text-align: center; font-family: 'Oswald', sans-serif; border-color: rgb(0,255,0); border: 2px solid; font-size: 120px";
+
+
+    let createTxtMsg2;
+    var w = date.getDay();
+    var m = date.getMinutes();
+    console.log("Today's day is: ", w);
+    console.log("Today's time is: ", currentHour, ":", m);
+   if (w >= 1 && w < 6){
+        if (currentHour == 7 && m > 44 || currentHour == 8 || currentHour == 9 && m < 16){
+            createTxtMsg2 = "You should be in 1st period";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+        if (currentHour == 9 && m > 20  || currentHour == 10 && m < 54){
+            createTxtMsg2 = "You should be in 2nd period";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+        if (currentHour == 10 && m > 53 || currentHour == 11 && m < 31){
+            createTxtMsg2 = "You should be at lunch";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+        if (currentHour == 11 && m > 35 || currentHour == 12 || currentHour == 13 && m < 7){
+            createTxtMsg2 = "You should be in 3rd period";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+        if (currentHour == 13 && m > 11  || currentHour == 14 && m < 43){
+            createTxtMsg2 = "You should be in 4th period";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+
+     
+    }
+</script>
+</html>

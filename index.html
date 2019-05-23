@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script type="text/javascript" src="js/domtime.js"></script>
+  
+  <title>Semester 2 Homepage</title>
+</head>
+<body onload="renderTime()">
+  <h1>This is the 2nd Semester Index. to reach the 1st Semester Index, click <a href="sem1/index2.html">here</a></h1>
+  <div id="clockDisplay"></div>
+  <div id="classPeriod"></div>
+<table align="center">
+  <tr>
+    <td colspan="3"><h1>Andy Robinson's Homepage (Semester 2)</h1></td>
+   
+  </tr>
+  <tr>
+    <td><h2>Project name</h2>
+      <br>
+      <p><a href="projects/payment.html" class="tableLink">Montly Payment Calculator</a></p>
+      <br>
+      <p><a href="projects/graphing.html">Nintendo Game Sales Graph</a></p>
+      <br>
+      <p><a href="projects/graphing2.html">Class-Made Graph</a></p>
+      <br>
+      <p><a href="projects/graphing3.html">Table-Input Graph</a></p>
+      <br>
+      <p><a href="projects/graphing4.html">Bloodpressure Graph (Patient)</a></p>
+      <br>
+      <p><a href="projects/graphing5.html">Bloodpressure Graph (Doctor)</a></p>
+      <br>
+      <p><a href="projects/bargraph.html">BarGraph</a></p>
+      <br>
+      <p><a href="projects/mousedraw.html">Mouse Draw</a></p>
+      <br>
+      <p><a href="projects/domtime.html">DOM Time</a></p>
+      <br>
+      <p><a href="projects/goodMorning.html">Good Morning</a></p>
+      <br>
+      <p><a href="projects/DOMinator.html">DOMinator</a></p>
+      <br>
+      <p><a href="projects/customZoom.html">Custom Zoom</a></p>
+      <br>
+      <p><a href="projects/w3customZoom.html">W3 Custom Zoom</a></p>
+      <br>
+      <p><a href="projects/imagefilereader.html">Image File Reader</a></p>
+      <br>
+      <p><a href="projects/w3mag.html">W3 Image Magnifying Glass!</a></p>
+    <br>
+    <p><a href="projects/split.html">Image Splitter</a></p>
+    <br>
+    <p><a href="projects/videopage.html">Video Background</a></p>
+    <br>
+    <p><a href="projects/parallax.html">Parallax</a></p>
+    <br>
+    <p><a href="projects/countdown.html">Countdown</a></p>
+    <br>
+    <p><a href="projects/vcs/vcs.html">Git/GitHub</a></p>
+    </td>
+    <td class="space"></td>
+    <td class="project"><h2>Project Description</h2>
+    <br><p>This website allows you to calculate monthly payments (if your provider uses the same equation)</p>
+    <br>
+    <p>This is the custom graph we're making for whatever we want</p>
+    <br>
+    <p>This is the graph we completed as a class</p>
+    <br>
+    <p>This graph uses a table to input a wide variety of change at once</p>
+    <br>
+    <p>This graph is a tool for doctors to keep track of bloodpressure. Patient enters bloodpressure here</p>
+    <br>
+    <p>This graph is a tool for doctors to keep track of bloodpressure. Doctors check bloodpressure here</p>
+    <br>
+    <p>A business chart of GDP</p>
+    <br>
+    <p>A drawing Program on the computer!</p>
+    <br>
+    <p>Practice with DOM</p>
+    <br>
+    <p>For when you need a little more encouragement to start the day</p>
+    <br>
+    <p>Some more DOM practice, with a cool name!</p>
+    <br>
+    <p>Zoom into your pictures!</p>
+    <br>
+    <p>W3 Picture Zoom!</p>
+    <br>
+    <p>Reads and displays image files</p>
+    <br>
+    <p>Uses a magnifier glass on images!</p>
+    <br>
+    <p>Shows before/after</p>
+    <br>
+    <p>Plays a video as a background</p>
+    <br>
+    <p>Parallax is the annoying thing where an annoying amount of the website scrolls but nothing else</p>
+    <br>
+    <p>Shows how much time (days, hours, minutes, seconds) until an event</p>
+    <br>
+    <p>Learning GitHub stuff</p>
+  </td>
+  </tr>
+  <tr>
+    <td class="vertSpace" colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3"><h2>Things I am excited for:</h2>
+    <ul style="color: rgb(255,255,255)">
+      <li><p>Super Mario Maker 2</p></li>
+      <li><p>The Legend of Zelda Link's Awakening Remake</p></li>
+      <li><p>Animal Crossing for Nintendo Switch</p></li>
+      <li><p>E3 2019</p></li>
+      <li><p>Luigi's Mansion 3</p></li>
+      <li><p>End of the semester</p></li>
+      <li><p>Mario Kart Tour</p></li>
+ 
+    </ul>
+    
+    </td>
+  </tr>
+</table>
+<p>My <a href="projects/chemistry/chemCode.html">Chemistry</a>Project</p>
+<p>Shoutouts to <a href="../b4/elenay/index.html"></a></p>
+</body>
+<script>
+ let getBody = document.body;
+
+let newElement = document.createElement("h1");
+
+let date = new Date();
+let currentHour = date.getHours();
+console.log("The current date and hour are: " + date);
+//currentHour = 14;
+
+let createTxtMsg;
+
+
+if(currentHour >= 4 && currentHour < 10) {
+    createTxtMsg = "Good Morning! / ¡Buenos Dias!";
+} else if (currentHour >= 10 && currentHour < 12) {
+    createTxtMsg = "Good Day! / ¡Buenos Dias!";
+} else if (currentHour >= 12 && currentHour < 18) {
+    createTxtMsg = "Good Afternoon! / ¡Buenas Tardes!";
+} else if (currentHour >= 18 && currentHour < 20) {
+    createTxtMsg = "Good Evening! / ¡Buenas Tardes!";
+} else if (currentHour >= 20 && currentHour < 4) {
+    createTxtMsg = "Good Night! / ¡Buenas Noches!";
+} else {
+    createTxtMsg = "Not a proper time";
+}
+console.log(createTxtMsg);
+
+let createEleTxt = document.createTextNode(createTxtMsg);
+
+newElement.appendChild(createEleTxt);
+
+getBody.appendChild(newElement);
+
+newElement.setAttribute("class", "welcome");
+
+newElement.style.cssText = "text-align: center; font-family: 'Oswald', sans-serif; border-color: rgb(0,255,0); border: 2px solid; font-size: 120px";
+
+let createTxtMsg2;
+    var w = date.getDay();
+    var m = date.getMinutes();
+
+    //m = 25;
+   
+
+    console.log("Today's day is: ", w);
+    console.log("Today's time is: ", currentHour, ":", m);
+   if (w >= 1 && w < 6){
+        if (currentHour == 7 && m > 44 || currentHour == 8 || currentHour == 9 && m < 16){
+            createTxtMsg2 = "You should be in 1st period";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+        if (currentHour == 9 && m > 20  || currentHour == 10 && m < 54){
+            createTxtMsg2 = "You should be in 2nd period";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+        if (currentHour == 10 && m > 53 || currentHour == 11 && m < 31){
+            createTxtMsg2 = "You should be at lunch";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+        if (currentHour == 11 && m > 35 || currentHour == 12 || currentHour == 13 && m < 7){
+            createTxtMsg2 = "You should be in 3rd period";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+        if (currentHour == 13 && m > 11  || currentHour == 14 && m < 43){
+            createTxtMsg2 = "You should be in 4th period";
+            console.log(createTxtMsg2);
+            document.querySelector("#classPeriod").innerHTML = createTxtMsg2;
+        }
+
+     
+    }
+</script>
+</html>

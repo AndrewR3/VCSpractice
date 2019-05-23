@@ -1,0 +1,85 @@
+html{
+    font-family: 'Noto Sans', sans-serif;
+}
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(70, 70, 70);
+}
+p{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(0, 0, 0);
+}
+ul{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(0, 0, 0);
+}
+div{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgba(87, 87, 87, 0.397);
+    width: 90%;
+    min-height: 100px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+button{
+    border: 2px solid black;
+    background-color: white;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 100px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+.input1{
+    border: 2px solid black;
+    background-color: white;
+    width: 44%;
+    margin-left: 5%;
+    margin-top: 20px;
+    height: 100px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    float: left;
+}
+.input2{
+    border: 2px solid black;
+    background-color: white;
+    width: 44%;
+    margin-right: 5%;
+    margin-top: 20px;
+    height: 100px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    float: right;
+}
+.silent{
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    width: 43%;
+    height: auto;
+}
+.read{
+    background-color: rgba(255, 1, 1, 0.5);
+}
+.vanish{
+    margin-right: 0px;
+    margin-top: 0px;
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+.base{
+    background-color: rgba(0,0,0,0);
+    font-size: 50px;
+}
+.exp{
+    background-color: rgba(0,0,0,0);
+    font-size: 25px; 
+}

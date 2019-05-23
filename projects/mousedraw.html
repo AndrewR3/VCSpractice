@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/mousedraw.css">
+    <title>Mouse Draw</title>
+</head>
+<body onload="InitMouseDraw()">
+    <div align="center">
+        <br>
+        <h1>Mouse Draw! / Andy Robinson / March 2019</h1>
+        <br><hr><br>
+        <canvas class="canvas" id="drawCanvas" width="1000px" height="1000px"></canvas>
+    </div>
+    <br><br>
+    <button onclick="javascript:clearArea();return false;" style="float: left;"><h1>Clear the Canvas</h1></button>
+    <select id="selWidth" style="float: right;">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7" selected="selected">7</option>
+        <option value="9">9</option>
+        <option value="11">11</option>
+    </select></p>
+    <p><select id="selColor">
+        <option value="red">red</option>
+        <option value="yellow">yellow</option>
+        <option value="green" selected="selected">green </option>
+        <option value="blue">blue</option>
+        <option value="white">white</option>
+    </select></p>
+    <button onclick="tictactoe()">Tic Tac Toe 3x3 board</button>
+    <button onclick="tictactectoctoe()" style="float: right">Tic Tac Tec Toc Toe 5x5 board</button>
+</body>
+<script type="text/javascript" src="../js/mousedraw.js">
+
+</script>
+</html>

@@ -17,25 +17,82 @@
     <p>In programming, typically a group of developers will share code to complete a project, and split up the work.
         They do this using a version control system (VCS). The VCS we're using/learning is GitHub, not to be confused
         with Git. Git is the program used on the computer, GitHub is the software that stores the data on the cloud.</p>
+    <img src="../../images/flow.png" alt="Flowchart to/from Git/Github" style="float: right; margin-right: 500px">
     <ul>Steps for Git
-        <li>compsci@compsci-VBox:/var/www/html/andyr$ sudo apt update</li>
-        <li>compsci@compsci-VBox:/var/www/html/andyr$ sudo apt install git</li>
-        <li>compsci@compsci-VBox:/var/www/html/andyr$ git init</li>
-        <li>compsci@compsci-VBox:/var/www/html/andyr$ git status</li>
         <li>
-            <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/andyr</b></font>$ touch .gitignore</li>
-        <li><pre><font color="#8AE234">compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/andyr</b></font>$ nano .gitignore
-        </pre>
+            sudo apt update
         </li>
         <li>
-            <pre><font color="#8AE234">compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/andyr</b></font>git add -A</pre>
+            sudo apt install git
         </li>
         <li>
-            <pre><font color="#8AE234">compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/andyr</b></font>git status</pre>
+            git init
+        </li>
+        git status
         </li>
         <li>
-            <pre><font color="#8AE234">compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/andyr</b></font>git reset</pre>
+            touch .gitignore
         </li>
+        <li>
+            nano .gitignore
+        </li>
+        <li>
+            git add -A
+        </li>
+        <li>
+            git status
+        </li>
+        <li>
+            git reset
+        </li>
+        <li>
+            git commit -m "Initial Commit"
+        </li>
+        <li>
+            git clone https://github.com/AndrewR3/andyr.git .
+        </li>
+        <li>
+            git remove -v
+        <li>&nbsp origin git clone https://github.com/bored178/VCS_bodenr (fetch)</li>
+        <li>&nbsp origin git clone https://github.com/bored178/VCS_bodenr (push)</li>
+        </li>
+        <li>
+            git diff
+        </li>
+        <li>
+            git remote add origin https://github.com/AndrewR3/VCSpractice.git
+
+        </li>
+        <li>
+        git pull origin master --allow-unrelated-histories
+warning: no common commits
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+From https://github.com/AndrewR3/VCSpractice
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+	projects/vcs/vcs.html
+	projects/w3mag.html
+Please commit your changes or stash them before you merge.
+Aborting
+Always do this before pushing (I guess...) </li>
+<li>
+    git push origin master
+Username for 'https://github.com': AndrewR3
+Password for 'https://AndrewR3@github.com': 
+To https://github.com/AndrewR3/VCSpractice.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/AndrewR3/VCSpractice.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+</li>
     </ul>
 </body>
 
